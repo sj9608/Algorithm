@@ -1,23 +1,24 @@
-
+#include <algorithm>
 #include <iostream>
+
 using namespace std;
 
 int main(void)
 {
-    int c;
-    cin >> c;
-
-    int *arr = new int[sizeof(int) * c + 1];
-
-    for(int i=0; i < c; i++)
+    int n;
+    int max = 0;
+    int input[1001] = {};
+    double result = 0;
+    
+    scanf("%d", &n);
+    for(int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        cin >> input[i];
+        if (input[i] > max) max = input[i];
+        result += input[i];
     }
+    result = ((result / max) * 100) / n;
+    printf("%f", result);
 
     return 0;
-}
-
-float newAvg()
-{
-
 }
