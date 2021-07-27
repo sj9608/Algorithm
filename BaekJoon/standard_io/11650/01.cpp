@@ -10,14 +10,9 @@ struct Point {
 
 bool ft_compare(const Point& p1, const Point& p2)
 {
-	if (p1.x < p2.x)
-		return 1;
-	else
-	{
-		if (p1.x == p2.x)
-			return 1;
-		return 0;
-	}
+	if (p1.x == p2.x)
+		return p1.y < p2.y;
+	return p1.x < p2.x;
 }
 
 int main(void)
