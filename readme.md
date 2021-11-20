@@ -1,19 +1,35 @@
 # Algorithm
 
-📂 BaekJoon  : 백준 알고리즘 문제 풀이\
-⌞📁 DP : Dynamic Programming\
-⌞📁 standard_io : 표준 입출력 문제\
-⌞📁 BFS : 너비 우선 탐색 문제\
-⌞📁 DFS : 깊이 우선 탐색 문제\
-⌞📁 etc : 분류, 나머지
+📂 BaekJoon  : 언어별 백준 알고리즘 문제 풀이\
+⌊ 📂 language\
+  ├ 📁 DP : Dynamic Programming\
+  ├ 📁 standard_io : 표준 입출력 문제\
+  ├ 📁 BFS : 너비 우선 탐색 문제\
+  ├ 📁 DFS : 깊이 우선 탐색 문제\
+  ⌊ 📁 etc : 분류, 나머지
 
-📝 skeleton.cpp : c++ 세팅\
+📂 DataStructure : 언어별로 자료구조 구현\
+⌊ 📂 language\
+  ├ 📁 Stack\
+  ├ 📁 Heap\
+  ⌊ 📁 LinkedList\
+   
+   
+📂 Programmers : 레벨/언어별 프로그래머스 알고리즘 문제 풀이\
+⌊ 📂 Level\
+  ⌊ 📂 language\
+  
+  
+📝 skeleton.cpp : c++ 세팅
+
 📝 skeleton.c : c 세팅
 
 ### C++ 입출력 속도 가속시키기
+
 ```c++
 std::ios_base::sync_with_stdio(0);
 ```
+
 #### 사용이유
 c++에서 표준 입력으로 이용하는게 cin 인데 cin이 다른 입력방법 (scnaf, get)에 비해 상대적으로 느리다.
 
