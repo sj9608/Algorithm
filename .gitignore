@@ -1,7 +1,11 @@
 .vscode/
 
+.idea/
+
 *.exe
 
 *.dSYM
 
 *.out
+
+**/*.DS_Store
